@@ -5,3 +5,29 @@
     justify-content: center;
     align-items: center;
 }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.paginationLink {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.paginationLink:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
