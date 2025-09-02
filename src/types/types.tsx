@@ -14,3 +14,19 @@ export type Post = {
   markdown: string;
   author: Author;
 };
+
+export interface ObjPaginacao {
+  first: number | null,
+  prev: number | null,
+  next: number | null,
+  last: number | null,
+  pages: number | null,
+  items: number | null,
+  data: Post[]
+};
+
+export type TypeSearchParams = {
+  searchParams?: {
+    page?: string | string[] | undefined | number | null;
+  };
+};
