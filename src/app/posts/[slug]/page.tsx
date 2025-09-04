@@ -45,9 +45,6 @@ export default async function PagePost({ params }: PageProps) {
     return (
         <div className={styles.div_container_post}>
             <h1>{post.title}</h1>
-            <br/>
-            <br/>
-            <br/>
             <CardPost post={post} />
             <h3 className={styles.subtitle}>Código:</h3>
             <div className={styles.code}>
