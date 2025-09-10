@@ -1,17 +1,18 @@
+
 .main {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-}
+    flex-grow: 1;
+} 
+/* 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
 }
-
+*/
 .pagination {
   display: flex;
   justify-content: center;
@@ -30,4 +31,16 @@
 
 .paginationLink:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+
+.botaoPadraoA{
+  color: var(--offwhite);
+  background-color: var(--cinza-claro);
+}
+.divSeparaBtns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-width: 6rem;
 }

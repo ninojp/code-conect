@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "JsonServer": "json-server --watch ./src/assets/posts.json --port 3034"
+    "serverAPI": "json-server --watch ./src/assets/posts.json --port 3034"
   },
   "dependencies": {
     "dompurify": "^3.2.6",

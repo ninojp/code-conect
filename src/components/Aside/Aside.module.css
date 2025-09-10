@@ -1,5 +1,11 @@
 .aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 3rem;
     border-radius: 8px;
     background: #171d1f;
     padding: 40px 16px;
 }
+

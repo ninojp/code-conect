@@ -2,6 +2,6 @@
 
 ## Projeto - Code Conect
 
-LInk do [Figma](https://www.figma.com/design/HnxDQYdsk7DIayRKGUrJi5/CodeConnect--%7C-Rede-social-de-Devs--Community-?node-id=155-3098&p=f&t=sRkX7QDgrR3JZdcJ-0)
+LInk do [Figma](https://www.figma.com/design/FMHmiB20EF75bNMGjPmBVD/React--configurando-e-estruturando-projetos-com-Vite-%7C-CodeConnect--Community-?node-id=201-3522&p=f&t=ZmaiBaUNvkPyRuiJ-0)
 
 Estou Refazendo este projeto Code-Conect, feito em partes em outras aulas, agora juntando sua partes para praticar meus estudos em HTML, CSS, JavaSCript, React, Next.js e TypeScript.

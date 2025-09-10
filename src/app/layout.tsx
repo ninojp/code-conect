@@ -11,7 +11,7 @@ const prompt = Prompt({
 
 export const metadata: Metadata = {
   title: "Code Conect",
-  description: "Refatorando este Projeto. Agora em React Next.js com TypeScript",
+  description: "Refatorando e complementando este Projeto(React.JS), Para React Next.js com TypeScript",
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {

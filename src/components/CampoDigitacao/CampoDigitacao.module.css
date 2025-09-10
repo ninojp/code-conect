@@ -1,4 +1,7 @@
 /* form__campo-digitacao é a classe do container dos inputs */
+.form__campo-digitacao {
+    margin-bottom: 1.5em;
+}
 
 .form__campo-digitacao input {
     margin-top: .5em;
@@ -10,7 +13,7 @@
     font-size: 18px;
 }
 
-input:not(:focus) {
+/* input:not(:focus) {
     background-color: var(--cinza-medio);
 }
 
@@ -18,7 +21,7 @@ input:not(:focus)::placeholder {
     color: var(--grafite);
     font-family: var(--fonte);
     font-size: 15px;
-}
+} */
 
 .form__campo-digitacao label {
     display: block;

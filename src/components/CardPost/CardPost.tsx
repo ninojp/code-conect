@@ -3,8 +3,8 @@ import Avatar from "../Avatar/Avatar";
 import styles from './CardPost.module.css';
 import { Post } from "@/types/types";
 import Link from "next/link";
-type CardPostProps = { post: Post; };
 
+type CardPostProps = { post: Post; };
 export default function CardPost({ post }: CardPostProps) {
     return (
         <Link href={`/posts/${post.slug}`} className={styles.link}>
