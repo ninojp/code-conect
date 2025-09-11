@@ -10,7 +10,6 @@ const nextConfig = {
         search: '',
       },
     ],
-  },
+  }
 };
-
 export default nextConfig;

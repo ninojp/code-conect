@@ -3,8 +3,9 @@ import styles from './page.module.css';
 import logger from "@/Logger";
 import Link from "next/link";
 import { ObjPaginacao, Post, TypeSearchParams } from "@/types/types";
-import Container from "@/components/Container/Container";
+import Container from "@/components/ContainerFlex/ContainerFlex";
 import Button from "@/components/Button/Button";
+import PaginacaoMenu from "@/components/PaginacaoMenu/PaginacaoMenu";
 
 async function getAllPosts(page: number | string): Promise<ObjPaginacao> {
   const pageNumber = Number(page) || 1;
@@ -23,29 +24,11 @@ export default async function Home({ searchParams }: TypeSearchParams) {
   const currentPage: number = Number(searchParams?.page ?? 1);
   const { data: posts, prev, next } = await getAllPosts(currentPage);
   return (
-    <main className={styles.main}>
-      <Container className="flexBox">
+    <div>
+      <main className={styles.main}>
         {posts.map((post: Post) => (<CardPost key={post.id} post={post} />))}
-      </Container>
-
-      <Container>
-        <nav className={styles.pagination}>
-          <div className={styles.divSeparaBtns}>
-            {/* {prev && (<Link href={`/?page=${prev}`} className={styles.paginationLink}> Anterior </Link>)} */}
-            {prev && (<Link href={`/?page=${prev}`}>
-              <Button className="botaoPadrao">Anterior</Button>
-            </Link>)}
-          </div>
-          <div className={styles.divSeparaBtns}>
-            <span> {currentPage} </span>
-          </div>
-          <div className={styles.divSeparaBtns}>
-            {next && (<Link href={`/?page=${next}`}>
-              <Button className="botaoPadrao">Próxima</Button>
-            </Link>)}
-          </div>
-        </nav>
-      </Container>
-    </main>
+      </main>
+      <PaginacaoMenu prev={prev} currentPage={currentPage} next={next} />
+    </div>
   );
 };

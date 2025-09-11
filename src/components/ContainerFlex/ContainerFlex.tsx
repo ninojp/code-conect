@@ -1,16 +1,17 @@
+import styles from './ContainerFlex.module.css';
 
 interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
   className?: string;
 };
-const Container: React.FC<ContainerProps> = ({ children, className, ...rest }) => {
+const ContainerFlex: React.FC<ContainerProps> = ({ children, className, ...rest }) => {
   return (
-    <div className={className ?? ''} {...rest}>
+    <div className={`${styles.containerFlex} ${className ?? ''}`} {...rest}>
       {children}
     </div>
   );
 };
-export default Container;
+export default ContainerFlex;
 
 //IA
 // Use React.ReactNode para aceitar qualquer elemento/fragmento/texto.

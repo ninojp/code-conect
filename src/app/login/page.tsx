@@ -5,7 +5,7 @@ import imgMulherPc from '../../assets/imgs/mulher-pc-login.png';
 import H1Titulo from "@/components/H1Titulo/H1Titulo";
 import H2Subtitulo from "@/components/H2Subtitulo/H2Subtitulo";
 import CompoDeDigitacao from "@/components/CampoDigitacao/CampoDigitacao";
-import Container from "@/components/Container/Container";
+import Container from "@/components/ContainerFlex/ContainerFlex";
 import Button from "@/components/Button/Button";
 import React from "react";
 import CheckBox from '@/components/CheckBox/CheckBox';

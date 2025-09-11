@@ -4,7 +4,7 @@ import "./globals.css";
 import Aside from "@/components/Aside/Aside";
 
 const prompt = Prompt({
-  weight: ['400', '600'],
+  weight: ['400', '500', '600'],
   subsets: ['latin'],
   display: 'swap'
 });

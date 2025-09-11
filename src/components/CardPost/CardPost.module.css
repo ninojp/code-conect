@@ -1,5 +1,5 @@
 .card {
-    width: 456px;
+    width: 486px;
     border-radius: 8px;
     background: #171D1F;
 }
@@ -7,7 +7,7 @@
 .header {
     border-radius: 8px 8px 0px 0px;
     background: #888;
-    padding: 16px;
+    padding: 1.5rem;
 }
 
 .header figure {

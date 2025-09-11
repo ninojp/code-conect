@@ -8,15 +8,9 @@ import MenuLateral from '../MenuLateral/MenuLateral';
 export default function Aside(): React.ReactElement {
     return (
         <aside className={styles.aside}>
-            <div>
-                {/* <img src='./logo.png' alt="Logo Code-Conect" /> */}
-                <Link href='/'>
-                    <Image src={imgLogo} alt="Logo Code-Conect" width={128} height={40} priority={true} />
-                </Link>
-            </div>
-            <div>
-                <Button className="botaoPadrao">Publicar</Button>
-            </div>
+            <Link href='/'>
+                <Image src={imgLogo} alt="Logo Code-Conect" width={128} height={40} priority={true} />
+            </Link>
             <MenuLateral />
         </aside>
     );

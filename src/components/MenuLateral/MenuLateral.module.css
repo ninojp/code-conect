@@ -13,10 +13,20 @@
     justify-content: center;
     width: 100%;
     text-decoration: none;
-    color: inherit;
     font-weight: 600;
     padding: 10px 0;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+}
+.liMenuLinkAtivo{
+    color: var(--verde-destaque);
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  /* display: inline-block;
+  vertical-align: middle; */
+  color: #81FE88; /* controla a cor quando SVG usa currentColor */
+  /* fill: currentColor; garante que o fill siga 'color' */
 }

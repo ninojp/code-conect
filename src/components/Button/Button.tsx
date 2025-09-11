@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+import styles from './Button.module.css';
 
 interface ButtonProps {
     children: ReactElement | string
@@ -8,7 +9,7 @@ interface ButtonProps {
 }
 const Button = ({children, tipo, classe, ...props}: ButtonProps) => {
     return (
-        <button type={tipo} className={classe ?? ''} {...props}>
+        <button type={tipo} className={`${styles.botaoPadrao} ${classe ?? ''}`} {...props}>
             {children}
         </button>
     );
