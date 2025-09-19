@@ -1,4 +1,5 @@
 'use client';
+import { useState } from "react";
 import styles from './login.module.css';
 import Image from "next/image";
 import imgMulherPc from '../../assets/imgs/mulher-pc-login.png';
@@ -7,7 +8,6 @@ import H2Subtitulo from "@/components/H2Subtitulo/H2Subtitulo";
 import CompoDeDigitacao from "@/components/CampoDigitacao/CampoDigitacao";
 import Container from "@/components/ContainerFlex/ContainerFlex";
 import Button from "@/components/Button/Button";
-import React from "react";
 import CheckBox from '@/components/CheckBox/CheckBox';
 import Link from 'next/link';
 import Texto from '@/components/Texto/Texto';
@@ -16,8 +16,8 @@ import imgGithub from '../../assets/github.svg';
 import imgGoogle from '../../assets/google.svg';
 
 export default function PageLogin() {
-    const [email, setEmail] = React.useState('');
-    const [senha, setSenha] = React.useState('');
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
     //=========================================================
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();

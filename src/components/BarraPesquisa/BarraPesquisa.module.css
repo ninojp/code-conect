@@ -1,0 +1,28 @@
+.barra-pesquisa {
+    width: 100%;
+    color: var(--cinza-claro);
+    padding: .5rem 1rem;
+    height: 49px;
+    font-family: var(--fonte);
+    font-size: 22px;
+    background: var(--cinza-escuro) url('../../assets/search.svg') no-repeat 32px;
+    border: 1px solid transparent;/* melhor ter borda presente para evitar "jump" ao focar */
+    border-radius: 4px;
+    transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.barra-pesquisa:hover {
+    border: 1px solid var(--verde-destaque);
+}
+
+.barra-pesquisa::placeholder {
+    text-align: center;
+}
+
+.barra-pesquisa:focus,
+.barra-pesquisa:focus-visible {
+    outline: none;/* remove outline padrão se preferir */
+    border-color: var(--verde-destaque);
+    box-shadow: 0 0 0 4px rgba(129, 254, 136, 0.12);/* opcional: glow sutil */
+    background: transparent;
+}

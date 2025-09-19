@@ -8,7 +8,7 @@ import MenuLateral from '../MenuLateral/MenuLateral';
 export default function Aside(): React.ReactElement {
     return (
         <aside className={styles.aside}>
-            <Link href='/'>
+            <Link href='/apiexterna'>
                 <Image src={imgLogo} alt="Logo Code-Conect" width={128} height={40} priority={true} />
             </Link>
             <MenuLateral />

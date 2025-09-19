@@ -1,0 +1,19 @@
+.divEstatisticas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.divEstatisticas ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.divEstatisticas ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

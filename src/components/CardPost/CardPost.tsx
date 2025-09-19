@@ -3,6 +3,7 @@ import Avatar from "../Avatar/Avatar";
 import styles from './CardPost.module.css';
 import { Post } from "@/types/types";
 import Link from "next/link";
+import CardEstatisticas from "../CardEstatisticas/CardEstatisticas";
 
 type CardPostProps = { post: Post; };
 export default function CardPost({ post }: CardPostProps) {
@@ -19,6 +20,7 @@ export default function CardPost({ post }: CardPostProps) {
                     <p>{post.body}</p>
                 </section>
                 <footer className={styles.footer}>
+                    <CardEstatisticas />
                     <Avatar imageSrc={post.author.avatar} name={post.author.username} />
                 </footer>
             </article>

@@ -4,6 +4,7 @@ import { Post } from "@/types/types";
 import { remark } from 'remark';
 import html from 'remark-html';
 import styles from './page.module.css';
+import conectaAPIExterna from "@/utils/conectaAPIExterna";
 // import DOMPurify from 'dompurify';
 // console.log(DOMPurify);
 
@@ -33,13 +34,12 @@ async function getPostBySlug(slug: string): Promise<Post | null> {
     post.markdown = htmlString;
     return post;
 };
-
 //==================================================================
 type PageProps = {
     params: { slug: string }
 }
 export default async function PagePost({ params }: PageProps) {
-    // console.log("LOG de PARAMS:", params, typeof params);    
+    // console.log("LOG de PARAMS:", params, typeof params);
     const post = await getPostBySlug(params.slug);
     if (!post) { return <h1>Este Post não foi encontrado</h1> }
     return (

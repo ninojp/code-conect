@@ -6,6 +6,8 @@ import { ObjPaginacao, Post, TypeSearchParams } from "@/types/types";
 import Container from "@/components/ContainerFlex/ContainerFlex";
 import Button from "@/components/Button/Button";
 import PaginacaoMenu from "@/components/PaginacaoMenu/PaginacaoMenu";
+import BarraPesquisa from "@/components/BarraPesquisa/BarraPesquisa";
+import FiltrosFeed from "@/components/FiltrosFeed/FiltrosFeed";
 
 async function getAllPosts(page: number | string): Promise<ObjPaginacao> {
   const pageNumber = Number(page) || 1;
@@ -24,11 +26,13 @@ export default async function Home({ searchParams }: TypeSearchParams) {
   const currentPage: number = Number(searchParams?.page ?? 1);
   const { data: posts, prev, next } = await getAllPosts(currentPage);
   return (
-    <div>
+    <>
+      <BarraPesquisa />
+      <FiltrosFeed />
       <main className={styles.main}>
         {posts.map((post: Post) => (<CardPost key={post.id} post={post} />))}
       </main>
       <PaginacaoMenu prev={prev} currentPage={currentPage} next={next} />
-    </div>
+    </>
   );
 };

@@ -20,7 +20,9 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
       <body className={`${prompt.className}`}>
         <div className='app-container'>
           <Aside />
-          {children}
+          <div className='divContainerLateralPage'>
+            {children}
+          </div>
         </div>
       </body>
     </html>

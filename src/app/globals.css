@@ -52,3 +52,10 @@ ul li {
   justify-content: center;
   margin-top: 3rem;
 }
+
+.divContainerLateralPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
