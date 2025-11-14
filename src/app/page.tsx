@@ -1,10 +1,7 @@
 import CardPost from "@/components/CardPost/CardPost";
 import styles from './page.module.css';
 import logger from "@/Logger";
-import Link from "next/link";
 import { ObjPaginacao, Post, TypeSearchParams } from "@/types/types";
-import Container from "@/components/ContainerFlex/ContainerFlex";
-import Button from "@/components/Button/Button";
 import PaginacaoMenu from "@/components/PaginacaoMenu/PaginacaoMenu";
 import BarraPesquisa from "@/components/BarraPesquisa/BarraPesquisa";
 import FiltrosFeed from "@/components/FiltrosFeed/FiltrosFeed";

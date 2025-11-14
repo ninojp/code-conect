@@ -7,9 +7,9 @@ interface ButtonProps {
     classe?: string
     [props: string]: any
 }
-const Button = ({children, tipo, classe, ...props}: ButtonProps) => {
+const Button = ({children, tipo, classe, ...rest}: ButtonProps) => {
     return (
-        <button type={tipo} className={`${styles.botaoPadrao} ${classe ?? ''}`} {...props}>
+        <button type={tipo} className={`${styles.botaoPadrao} ${classe ?? ''}`} {...rest}>
             {children}
         </button>
     );
